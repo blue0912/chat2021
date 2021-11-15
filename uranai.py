@@ -239,7 +239,7 @@ def run_chat(chat = chat, start='占いするよ', **kw):
 # 'name', 'birthday', 'asking'
 frame = {}
 
-def myuranai(input_text):
+def mymyuranai(input_text):
   global frame # 外部の状態を参照する
   if 'asking' in frame:  # asking から更新する
     frame[frame['asking']] = input_text
@@ -263,4 +263,4 @@ def myuranai(input_text):
   return output_text
 
 def start():
-  run_chat(chat=myuranai)    
+  run_chat(chat=mymyuranai)    
